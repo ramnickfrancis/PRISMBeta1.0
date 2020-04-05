@@ -31,7 +31,7 @@
             width: 80%;
             background-color: white;
             color: black;
-
+            opacity: 0.5;
         }
     </style>
 </head>
@@ -108,10 +108,10 @@
 
         //LINES AFTER THIS IS THE ONES ORIGINALLY ON THE RESULTS PAGE
       function makeTableHTML(myArray) {
-          var result = "<table border=1>";
+          var result = "<table align="center" border=1>";
           for (var i = 0; i < myArray.length; i++) {
               result += "<tr>";
-              for (var j = 0; j < myArray[i].length; j++) {
+              for (var j = 0; j < myArray[i].length-1; j++) {
                   result += "<td>" + myArray[i][j] + "</td>";
               }
               result += "</tr>";
